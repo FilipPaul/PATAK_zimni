@@ -16,15 +16,22 @@ clc
 %   <-------width ------>
 
 %PROBLEM TO SOLVE: SE + k^2TE = 0
-width = 22.86e-3;
-height = 10.16e-3;
+%% TO BE SET:...................
+mode = "parallel_TM";%rectangular or parallel waveguide.. also can be: "parallel_TE","rect_TM" ,"rect_TE"
+width = 12.45e-3; %in case of parallel plates -> this variable acts like d
+height = 2;% -> in case of parallel plates ignore this value.  
+N_elements_x = 30; %N of rectangular elements -> will be converted to double amount of triangular elemnts
+N_elements_y = 20;
+mode_to_plot = 2; %mode to be plot...
 
-N_elements_x = 20; %N of recangular elements
-N_elements_y = 10;
+
+
+if( mode == "parallel_TE" || mode == "parallel_TM")
+   height = width/1e3; 
+end
 dx = width / N_elements_x;
 dy = height / N_elements_y;
 N_of_triangles = 2 * N_elements_y * N_elements_x; %N of triangular elements
-mode_to_plot = 1; %TE30
 
 %% Aproximation and residual problem (S and T)
 
@@ -67,55 +74,54 @@ end
 %% C Matrix
 C = get_c1(N_elements_x,N_elements_y,N_of_triangles);
 
-
 %% Mesh combining and boundary conditions..
 S = C'*S_diag*C;
 T = C'*T_diag*C;
 
+field = "H";
+global_nodes_to_remove = [];
+if (mode == "parallel_TM" || mode == "rect_TM")
+    field = "E";
+    global_nodes_to_remove = [1];
 
-
-global_nodes_to_remove = [1]
-
-%rows 1,21,22,42.43,63,64 - 0+1+Nx+1+Nx+1 ..... 
-i = 1
-while (i < N_elements_y*2)
-    if mod(i,2) == 0
-        global_nodes_to_remove = [global_nodes_to_remove,global_nodes_to_remove(end)+1];
-    else
-        global_nodes_to_remove = [global_nodes_to_remove,global_nodes_to_remove(end)+N_elements_x];
+    %rows 1,21,22,42.43,63,64 - 0+1+Nx+1+Nx+1 ..... 
+    i = 1;
+    while (i < N_elements_y*2)
+        if mod(i,2) == 0
+            global_nodes_to_remove = [global_nodes_to_remove,global_nodes_to_remove(end)+1];
+        else
+            global_nodes_to_remove = [global_nodes_to_remove,global_nodes_to_remove(end)+N_elements_x];
+        end
+        i = i+1;
     end
-    i = i+1;
 end
 
+if (mode == "rect_TM")
 %columns
-for i = 1:N_elements_x+1
-    global_nodes_to_remove = [global_nodes_to_remove i];
-    global_nodes_to_remove = [global_nodes_to_remove , N_elements_y*(N_elements_x+1)+i];
+    for i = 1:N_elements_x+1
+        global_nodes_to_remove = [global_nodes_to_remove i];
+        global_nodes_to_remove = [global_nodes_to_remove , N_elements_y*(N_elements_x+1)+i];
 
+    end
 end
 
-global_nodes_to_remove = unique(global_nodes_to_remove);
-remove_correction = 0;
-for i = 1:length(global_nodes_to_remove)
-    S(global_nodes_to_remove(i)-remove_correction,:) = [];
-    S(:,global_nodes_to_remove(i)-remove_correction) = [];
-    T(global_nodes_to_remove(i)-remove_correction,:) = [];
-    T(:,global_nodes_to_remove(i)-remove_correction) = [];
-    remove_correction = remove_correction +1;
+
+if (mode == "parallel_TM" || mode == "rect_TM")
+    global_nodes_to_remove = unique(global_nodes_to_remove);
+    remove_correction = 0;
+    for i = 1:length(global_nodes_to_remove)
+        S(global_nodes_to_remove(i)-remove_correction,:) = [];
+        S(:,global_nodes_to_remove(i)-remove_correction) = [];
+        T(global_nodes_to_remove(i)-remove_correction,:) = [];
+        T(:,global_nodes_to_remove(i)-remove_correction) = [];
+        remove_correction = remove_correction +1;
+    end
 end
-% row_len = zeros(length(S(1,:)),1);
-% col_len = zeros(1,length(S(1,:)));
-% for i = 1:length(global_nodes_to_remove)
-%     S(global_nodes_to_remove(i),:) = row_len;
-%     S(:,global_nodes_to_remove(i)) = col_len ;
-%     T(global_nodes_to_remove(i),:) = row_len;
-%     T(:,global_nodes_to_remove(i)) = col_len ;
-% end
 
 
+%% Solution eigen val/vect problem
 [E,K] = eig(S,T);
-
-k =real(sqrt(diag(K(1:6,1:6)))) %print K-values
+k =real(sqrt(diag(K))); %print K-values
 
 
 
@@ -125,7 +131,11 @@ y_values = 0:dy:dy*(N_elements_y);
 
 figure(1)
 i = 0;
-corection = 0;
+corection = 0;%to correct visualisation -> recover indexes after boundary condition deletion...
+mode_correction = 0; %to ignore zero modes
+if round(k(1)) ~= 0
+    mode_correction = 1;
+end
 for y= 1:1:N_elements_y+1
     for x = 1:1:N_elements_x+1
         i = i+1;
@@ -135,18 +145,18 @@ for y= 1:1:N_elements_y+1
         hold on
        else
         
-        plot3(x_values(x),y_values(y),E(i-corection,mode_to_plot), "xr")
+        plot3(x_values(x),y_values(y),E(i-corection,mode_to_plot+1-mode_correction), "xr")
         hold on
        end
     end
 end
 grid on
 grid minor
-title("TM_modes")
+title(mode + mode_to_plot + " " + field + "-Field,k = " + k(mode_to_plot+1-mode_correction))
 xlabel("x")
 ylabel("y")
-zlabel("E(x,y)")
+zlabel(field+"(x,y)")
 
-
+disp(k(1:4))%display first 4 modes k values
 
 
