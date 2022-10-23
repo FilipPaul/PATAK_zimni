@@ -1,7 +1,4 @@
-close all
 clear variables
-clc
-
 %% Discretization (cut front-view into n triangles..)
 % 2 - plates
 %   
@@ -17,12 +14,12 @@ clc
 
 %PROBLEM TO SOLVE: SE + k^2TE = 0
 %% TO BE SET:...................
-mode = "parallel_TM";%rectangular or parallel waveguide.. also can be: "parallel_TE","rect_TM" ,"rect_TE"
-width = 12.45e-3; %in case of parallel plates -> this variable acts like d
-height = 2;% -> in case of parallel plates ignore this value.  
-N_elements_x = 30; %N of rectangular elements -> will be converted to double amount of triangular elemnts
-N_elements_y = 20;
-mode_to_plot = 2; %mode to be plot...
+mode = "rect_TE";%rectangular or parallel waveguide.. also can be: "parallel_TE","rect_TM" ,"rect_TE"
+width = 22.86e-3; %in case of parallel plates -> this variable acts like d
+height = 10.16e-3;% -> in case of parallel plates ignore this value.  
+N_elements_x = 15; %N of rectangular elements -> will be converted to double amount of triangular elemnts
+N_elements_y = 10;
+mode_to_plot = 3; 
 
 
 
@@ -129,7 +126,7 @@ k =real(sqrt(diag(K))); %print K-values
 x_values = 0:dx:dx*(N_elements_x);
 y_values = 0:dy:dy*(N_elements_y);
 
-figure(1)
+figure
 i = 0;
 corection = 0;%to correct visualisation -> recover indexes after boundary condition deletion...
 mode_correction = 0; %to ignore zero modes
@@ -152,7 +149,7 @@ for y= 1:1:N_elements_y+1
 end
 grid on
 grid minor
-title(mode + mode_to_plot + " " + field + "-Field,k = " + k(mode_to_plot+1-mode_correction))
+title(mode + mode_to_plot + " " + field + "-Field,k = " + k(mode_to_plot+1-mode_correction), 'Interpreter', 'none')
 xlabel("x")
 ylabel("y")
 zlabel(field+"(x,y)")

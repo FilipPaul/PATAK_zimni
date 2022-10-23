@@ -1,7 +1,6 @@
 % function parallel_tm(N, d)
 % N   number of finite elements
 % d   plate - plate distance
-close all
 clear variables
 N = 1200;
 d = 12.45e-3;
