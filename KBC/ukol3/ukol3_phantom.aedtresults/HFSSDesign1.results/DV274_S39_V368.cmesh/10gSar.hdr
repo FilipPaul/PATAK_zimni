@@ -1,0 +1,21 @@
+$begin 'Header'
+	Version=3
+	DataFormat='BINARY'
+	DataPrecision='Double'
+	BigEndian=false
+	Xmin=-0.027
+	Ymin=0.0105
+	Zmin=-0.03
+	Xmax=0.027
+	Ymax=0.0645
+	Zmax=0.03
+	NumVoxelAlongX=54
+	NumVoxelAlongY=54
+	NumVoxelAlongZ=60
+	Spacing=0.001
+	DefaultDensity=1000
+	TargetMass=0.01
+	RelativeMassTol=1e-06
+	MinimumTissueRatio=0.9
+	TissueObjects='6 74 83 92 110'
+$end 'Header'

@@ -1,0 +1,7 @@
+$begin 'CacheDataVersion'
+	DataVersion=13
+$end 'CacheDataVersion'
+$begin 'VariableValues'
+	dipole_l='54.15mm'
+	air_t='dipole_l*2'
+$end 'VariableValues'

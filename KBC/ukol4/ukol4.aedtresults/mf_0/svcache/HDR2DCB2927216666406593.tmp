@@ -1,0 +1,95 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=4
+	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='S(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=1
+		$begin 'SimValueParams'
+			QuantityName='GainTotal'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=2
+		$begin 'SimValueParams'
+			QuantityName='Z(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=3
+		$begin 'SimValueParams'
+			QuantityName='Zo(1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=0
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=95
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=96
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=3
+						SimValueContext(0, 0, 2, 0, false, false, 9, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=3011
+						$begin 'MinorVVMap'
+							MajorVariation='ant_l=\'30.609999999999999mm\' fat_t=\'10mm\' Freq=\'2.4500000000000002GHz\' muscle_t=\'28mm\' phantom_w=\'100mm\' skin_t=\'2mm\''
+							MinorCacheFile='min4FF7307881666653372147.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='ant_l=\'28mm\' fat_t=\'10mm\' Freq=\'2.4500000000000002GHz\' muscle_t=\'28mm\' phantom_w=\'100mm\' skin_t=\'2mm\''
+							MinorCacheFile='min50DB307881666653442155.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='ant_l=\'29mm\' fat_t=\'10mm\' Freq=\'2.4500000000000002GHz\' muscle_t=\'28mm\' phantom_w=\'100mm\' skin_t=\'2mm\''
+							MinorCacheFile='min5F97307881666654597167.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=100
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=0
+						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=3011
+						$begin 'MinorVVMap'
+							MajorVariation='ant_l=\'30.609999999999999mm\' fat_t=\'10mm\' muscle_t=\'28mm\' phantom_w=\'100mm\' skin_t=\'2mm\''
+							MinorCacheFile='min4FF7307881666653372148.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='ant_l=\'28mm\' fat_t=\'10mm\' muscle_t=\'28mm\' phantom_w=\'100mm\' skin_t=\'2mm\''
+							MinorCacheFile='min50DB307881666653442156.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='ant_l=\'29mm\' fat_t=\'10mm\' muscle_t=\'28mm\' phantom_w=\'100mm\' skin_t=\'2mm\''
+							MinorCacheFile='min5F97307881666654597168.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
+$end 'SimValueCache'

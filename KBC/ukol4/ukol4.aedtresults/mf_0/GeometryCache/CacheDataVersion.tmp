@@ -1,0 +1,10 @@
+$begin 'CacheDataVersion'
+	DataVersion=52
+$end 'CacheDataVersion'
+$begin 'VariableValues'
+	phantom_w='100mm'
+	skin_t='2mm'
+	fat_t='10mm'
+	muscle_t='28mm'
+	ant_l='29mm'
+$end 'VariableValues'

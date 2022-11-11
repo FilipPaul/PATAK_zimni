@@ -1,0 +1,7 @@
+$begin 'ValidationCache'
+	$begin 'OneValidationResult'
+		Variation='air_t=\'108.3mm\' dipole_l=\'54.149999999999999mm\''
+		Status=true
+		FileName='VI266532624166655980484.tmp'
+	$end 'OneValidationResult'
+$end 'ValidationCache'

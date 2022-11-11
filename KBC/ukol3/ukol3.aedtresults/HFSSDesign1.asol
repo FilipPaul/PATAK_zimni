@@ -1,0 +1,278 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002022, month=000000000010, day=000000000024, hour=000000000000, min=000000000015, sec=000000000003)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000008937, lin=000000000257, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign1'
+	VersionID=36
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=413
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='air_t=\'106.5mm\' dipole_l=\'53.25mm\'', ID=140)
+		Map(V='air_t=\'108.2mm\' dipole_l=\'54.100000000000001mm\'', ID=144)
+		Map(V='air_t=\'108.3mm\' dipole_l=\'54.149999999999999mm\'', ID=146)
+		Map(V='air_t=\'108.5mm\' dipole_l=\'54.25mm\'', ID=142)
+		Map(V='air_t=\'110.44880000000001mm\' dipole_l=\'55.224400000000003mm\'', ID=132)
+		Map(V='air_t=\'110.5mm\' dipole_l=\'55.25mm\'', ID=134)
+		Map(V='air_t=\'116.44880000000001mm\' dipole_l=\'58.224400000000003mm\'', ID=130)
+		Map(V='air_t=\'122.44880000000001mm\' dipole_l=\'30.612200000000001mm\'', ID=42)
+		Map(V='air_t=\'232.89760000000001mm\' dipole_l=\'58.224400000000003mm\'', ID=129)
+		Map(V='air_t=\'244.89760000000001mm\' dipole_l=\'61.224400000000003mm\'', ID=123)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=42, Ver=36, Dir='DV42_V36.imesh/')
+		M(VID=123, Ver=36, Dir='DV123_V36.imesh/')
+		M(VID=130, Ver=36, Dir='DV130_V36.imesh/')
+		M(VID=132, Ver=36, Dir='DV132_V36.imesh/')
+		M(VID=134, Ver=36, Dir='DV134_V36.imesh/')
+		M(VID=140, Ver=36, Dir='DV140_V36.imesh/')
+		M(VID=142, Ver=36, Dir='DV142_V36.imesh/')
+		M(VID=144, Ver=36, Dir='DV144_V36.imesh/')
+		M(VID=146, Ver=36, Dir='DV146_V36.imesh/')
+	$end 'InitialMeshes'
+	MeshAssemVersionID=30
+	$begin 'NextAssemVersionID'
+		NextUniqueID=31
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'DefinitionMeshes'
+		$begin 'DefMeshes_Comp-1'
+			DefinitionID=-1
+			VersionID=29
+			VIDMap('air_t=\'106.5mm\' dipole_l=\'53.25mm\'', 141, 'air_t=\'108.2mm\' dipole_l=\'54.100000000000001mm\'', 145, 'air_t=\'108.3mm\' dipole_l=\'54.149999999999999mm\'', 147, 'air_t=\'108.5mm\' dipole_l=\'54.25mm\'', 143, 'air_t=\'110.44880000000001mm\' dipole_l=\'55.224400000000003mm\'', 133, 'air_t=\'110.5mm\' dipole_l=\'55.25mm\'', 135, 'air_t=\'116.44880000000001mm\' dipole_l=\'58.224400000000003mm\'', 131, 'air_t=\'122.44880000000001mm\' dipole_l=\'30.612200000000001mm\'', 98, 'air_t=\'244.89760000000001mm\' dipole_l=\'61.224400000000003mm\'', 124)
+			DM(VID=98, Ver=29, Dir='NDV98_V29.dmesh/')
+			DM(VID=124, Ver=29, Dir='NDV124_V29.dmesh/')
+			DM(VID=131, Ver=29, Dir='NDV131_V29.dmesh/')
+			DM(VID=133, Ver=29, Dir='NDV133_V29.dmesh/')
+			DM(VID=135, Ver=29, Dir='NDV135_V29.dmesh/')
+			DM(VID=141, Ver=29, Dir='NDV141_V29.dmesh/')
+			DM(VID=143, Ver=29, Dir='NDV143_V29.dmesh/')
+			DM(VID=145, Ver=29, Dir='NDV145_V29.dmesh/')
+			DM(VID=147, Ver=29, Dir='NDV147_V29.dmesh/')
+		$end 'DefMeshes_Comp-1'
+	$end 'DefinitionMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=42, Ver=36, Dir='DV42_MI0_V36.sd/')
+			MI(VID=123, Ver=36, Dir='DV123_MI0_V36.sd/')
+			MI(VID=130, Ver=36, Dir='DV130_MI0_V36.sd/')
+			MI(VID=132, Ver=36, Dir='DV132_MI0_V36.sd/')
+			MI(VID=134, Ver=36, Dir='DV134_MI0_V36.sd/')
+			MI(VID=140, Ver=36, Dir='DV140_MI0_V36.sd/')
+			MI(VID=142, Ver=36, Dir='DV142_MI0_V36.sd/')
+			MI(VID=144, Ver=36, Dir='DV144_MI0_V36.sd/')
+			MI(VID=146, Ver=36, Dir='DV146_MI0_V36.sd/')
+		$end 'SubData'
+	$end 'MI'
+	VersionID2=0
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=39, Instance=\'SetupDefinition\', Solution=-1, VersionID=220)'='SolutionBlock13'
+	'SolutionKey(SimSetup=39, Instance=\'SolutionDefinition\', Solution=40, VersionID=220)'='SolutionBlock10'
+	'SolutionKey(SimSetup=39, Instance=\'SolutionDefinition\', Solution=41, VersionID=220)'='SolutionBlock11'
+	'SolutionKey(SimSetup=39, Instance=\'SolutionDefinition\', Solution=45, VersionID=220)'='SolutionBlock12'
+$end 'BlockMapName'
+$begin 'SolutionBlock10'
+	SolutionName='AdaptivePass'
+	SolutionID=40
+	V=220
+	$begin 'States'
+		F(VID=146, Ver=220)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(2450000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=1
+			M(VID=146, Ver=220, File='DV146_SOL40_M1_V220.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			M(VID=146, Ver=220, File='DV146_SOL40_M2_V220.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			M(VID=146, Ver=220, File='DV146_SOL40_M3_V220.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=4
+			M(VID=146, Ver=220, File='DV146_SOL40_M4_V220.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=5
+			M(VID=146, Ver=220, File='DV146_SOL40_M5_V220.sd')
+		$end 'SubData'
+	$end 'M'
+$end 'SolutionBlock10'
+$begin 'SolutionBlock11'
+	SolutionName='LastAdaptive'
+	SolutionID=41
+	V=220
+	$begin 'States'
+		F(VID=146, Ver=220)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(2450000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=146, Ver=220, File='DV146_SOL41_M0_V220.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(103, 2450000000)
+		$begin 'DataMap'
+			VID=146
+			Ver=220
+			F(DblID=103, Dir='DV146_S41_V220_F103/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock11'
+$begin 'SolutionBlock12'
+	SolutionName='Sweep'
+	SolutionID=45
+	V=220
+	$begin 'States'
+		F(VID=146, Ver=220)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(2000000000, 2020000000, 2040000000, 2060000000, 2080000000, 2100000000, 2120000000, 2140000000, 2160000000, 2180000000, 2200000000, 2220000000, 2240000000, 2260000000, 2280000000, 2300000000, 2320000000, 2340000000, 2360000000, 2380000000, 2400000000, 2420000000, 2440000000, 2460000000, 2480000000, 2500000000, 2520000000, 2540000000, 2560000000, 2580000000, 2600000000, 2620000000, 2640000000, 2660000000, 2680000000, 2700000000, 2720000000, 2740000000, 2760000000, 2780000000, 2800000000, 2820000000, 2840000000, 2860000000, 2880000000, 2900000000, 2920000000, 2940000000, 2960000000, 2980000000, 3000000000)
+		SolutionType=5
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=0
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=146, Ver=220, File='DV146_SOL45_M0_V220.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'TransientSolveStauts'
+		SS(VID=146, Ver=220, SS=1)
+	$end 'TransientSolveStauts'
+	$begin 'SolverUsage'
+		IDDblMap(117, 3000000000, 118, 2000000000, 119, 2500000000, 120, 2250000000, 125, 2750000000, 126, 2375000000, 127, 2125000000, 128, 2625000000)
+		$begin 'DataMap'
+			VID=146
+			Ver=220
+			SU(DblID=118, SU='DV146_S45_V220_F118_SU.txt')
+			SU(DblID=127, SU='DV146_S45_V220_F127_SU.txt')
+			SU(DblID=120, SU='DV146_S45_V220_F120_SU.txt')
+			SU(DblID=126, SU='DV146_S45_V220_F126_SU.txt')
+			SU(DblID=119, SU='DV146_S45_V220_F119_SU.txt')
+			SU(DblID=128, SU='DV146_S45_V220_F128_SU.txt')
+			SU(DblID=125, SU='DV146_S45_V220_F125_SU.txt')
+			SU(DblID=117, SU='DV146_S45_V220_F117_SU.txt')
+		$end 'DataMap'
+	$end 'SolverUsage'
+$end 'SolutionBlock12'
+$begin 'SolutionBlock13'
+	SimSetupID=39
+	SimSetupName='Setup1'
+	VersionID=220
+	$begin 'EmConvergenceData'
+		EmConv(VID=146, Ver=220, EmConv='DV146_S39_V220.EMConvData')
+	$end 'EmConvergenceData'
+	IsImported=false
+	IsTable=false
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		M(VID=146, Ver=220, Dir='DV146_S39_V220.cmesh/')
+	$end 'CurrMeshes'
+	MeshAssemVersionID=2
+	$begin 'NextAssemVersionID'
+		NextUniqueID=3
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+		$begin 'SubData'
+			ID=5
+			ADP(VID=146, Ver=220, Dir='DV146_S39_ADP5_V220.sd/')
+		$end 'SubData'
+	$end 'ADP'
+	$begin 'SU'
+		$begin 'SubData'
+			ID=1
+			SU(VID=146, Ver=220, File='DV146_S39_SD1_V220.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			SU(VID=146, Ver=220, File='DV146_S39_SD2_V220.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			SU(VID=146, Ver=220, File='DV146_S39_SD3_V220.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=4
+			SU(VID=146, Ver=220, File='DV146_S39_SD4_V220.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=5
+			SU(VID=146, Ver=220, File='DV146_S39_SD5_V220.su')
+		$end 'SubData'
+	$end 'SU'
+	$begin 'WaveAdapt'
+		WA(VID=146, Ver=220, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=146, Ver=220, P=5)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=146, Ver=220, File='DV146_S39_V220.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=146, Ver=220, Dir='DV146_S39_MI0_V220.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock13'
+$begin '$index$'
+	$begin '$index$'
+		BlockMapName(pos=3586, lin=71, lvl=0)
+		SolutionBlock10(pos=4082, lin=78, lvl=0)
+		SolutionBlock11(pos=4975, lin=119, lvl=0)
+		SolutionBlock12(pos=5638, lin=152, lvl=0)
+		SolutionBlock13(pos=7467, lin=195, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=8937, lin=257, lvl=0)
+	$end '$index$'
+$end '$index$'
