@@ -5,8 +5,40 @@ $begin 'RFSM'
 	$end 'CustomSurfs'
 	$begin 'SetupSolns'
 		$begin 'SetupSolnEntry'
+			Key(ParentID=1, VersID=2, ParentID=41, VersID=220, Context='0:0', DesVarn='air_t=\'60.399999999999999mm\' dipole_l=\'30.199999999999999mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
+			SetupSolnFBOFile='29B027624166872748442.tmp'
+		$end 'SetupSolnEntry'
+		$begin 'SetupSolnEntry'
+			Key(ParentID=1, VersID=2, ParentID=41, VersID=220, Context='0:0', DesVarn='air_t=\'61.200000000000003mm\' dipole_l=\'30.600000000000001mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
+			SetupSolnFBOFile='289727624166872739833.tmp'
+		$end 'SetupSolnEntry'
+		$begin 'SetupSolnEntry'
+			Key(ParentID=1, VersID=2, ParentID=41, VersID=220, Context='0:0', DesVarn='air_t=\'35mm\' dipole_l=\'54.149999999999999mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
+			SetupSolnFBOFile='616E276241668731854140.tmp'
+		$end 'SetupSolnEntry'
+		$begin 'SetupSolnEntry'
+			Key(ParentID=1, VersID=2, ParentID=41, VersID=220, Context='0:0', DesVarn='air_t=\'40.899999999999999mm\' dipole_l=\'54.149999999999999mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
+			SetupSolnFBOFile='4C86276241668730215130.tmp'
+		$end 'SetupSolnEntry'
+		$begin 'SetupSolnEntry'
 			Key(ParentID=1, VersID=2, ParentID=41, VersID=220, Context='0:0', DesVarn='air_t=\'108.3mm\' dipole_l=\'54.149999999999999mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
-			SetupSolnFBOFile='2919326241666560016102.tmp'
+			SetupSolnFBOFile='410E276241668729316118.tmp'
+		$end 'SetupSolnEntry'
+		$begin 'SetupSolnEntry'
+			Key(ParentID=1, VersID=2, ParentID=41, VersID=220, Context='0:0', DesVarn='air_t=\'162.44999999999999mm\' dipole_l=\'54.149999999999999mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
+			SetupSolnFBOFile='235927624166872698713.tmp'
+		$end 'SetupSolnEntry'
+		$begin 'SetupSolnEntry'
+			Key(ParentID=1, VersID=2, ParentID=41, VersID=220, Context='0:0', DesVarn='air_t=\'109.56472710883681mm\' dipole_l=\'54.782363554418403mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
+			SetupSolnFBOFile='4010276241668729238113.tmp'
+		$end 'SetupSolnEntry'
+		$begin 'SetupSolnEntry'
+			Key(ParentID=1, VersID=2, ParentID=41, VersID=220, Context='0:0', DesVarn='air_t=\'120.8mm\' dipole_l=\'60.399999999999999mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
+			SetupSolnFBOFile='2A1F27624166872751851.tmp'
+		$end 'SetupSolnEntry'
+		$begin 'SetupSolnEntry'
+			Key(ParentID=1, VersID=2, ParentID=41, VersID=220, Context='0:0', DesVarn='air_t=\'122.44mm\' dipole_l=\'61.219999999999999mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
+			SetupSolnFBOFile='369527624166872849579.tmp'
 		$end 'SetupSolnEntry'
 	$end 'SetupSolns'
 	$begin 'MonostaticRcsSolns'

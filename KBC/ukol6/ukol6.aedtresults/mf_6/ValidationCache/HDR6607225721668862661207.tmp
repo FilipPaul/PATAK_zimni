@@ -1,0 +1,7 @@
+$begin 'ValidationCache'
+	$begin 'OneValidationResult'
+		Variation='air_t=\'70mm\' d_coax_diel=\'5mm\' d_coax_signal=\'1.3mm\' fat_t=\'10mm\' feed_w=\'3.9100000000000001mm\' muscle_t=\'28mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'40.000999999999998mm\' patch_w=\'48.399999999999999mm\' phantom_w=\'200mm\' skin_t=\'2mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+		Status=true
+		FileName='VI6607225721668862661208.tmp'
+	$end 'OneValidationResult'
+$end 'ValidationCache'

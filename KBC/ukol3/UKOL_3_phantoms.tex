@@ -86,9 +86,12 @@
 	\section{\Large Porovnání S11 parametru pro dipól s a bez modelu lidského zápěstí:}
 	\begin{figure}[ht!]
 		\centering
-		\includegraphics[width = 1\textwidth]{S11.png}
+		\includegraphics[width = 0.9\textwidth]{S11.png}
 		\captionof{figure}{S11 parametry s a bez fantomu}
 	\end{figure}
+Dipól má pro dané rozměry lepší S11 parametry kolem rezonančního kmitočtu v případě, že je poblíž fantom.
+Obecně bych spíše čekal, že dojde k rozladění antény a zhoršení S11 parametrů. Nicméně fantom je ve 
+velmi blízko anténě a chování S11 parametrů je tak poměrně těžce (Alespoň pro mě...) předvídatelné. 
 
 	\section{\Large Porovnání záření ve vzdáleném poli:}
 	\begin{figure}[ht!]
@@ -104,16 +107,28 @@
 		  \captionof{figure}{Vyzařování ve vzdáleném poli s fantomem}
 		\end{minipage}
 		\end{figure}
+Z vyzařovacích charakteristik je patrné, že směrem k fantomu (zápěstí) dojde k pohlcení
+většiny vyzařované energie vlivem ztrát v dielektriku. Ve směru od zápěstí je anténa
+mírně směrovější, kde maximální zisk vzrostl na 3.2dB oproti 2.8dB. To je pravděpodobně způsobeno
+tím, že dochází k částečnému odrazu od fantomu z důvodu nenulové vodivosti lidských tkání.
 \clearpage
 \section{\Large SAR}
+Nastavení SAR bylo provedeno podle návodu, nicméně se mi zdají hodnoty poněkud vysoké. Maximální hodnota
+SAR pro zápěstí je 4W/kg(pro 10g). Například Bluetooth LE má maximální vyzářený výkon roven 10mW, což by
+bylo možné pomocí této antény vyzářit a SAR by byl stále v limitech. Ale už by nebylo možné využít tuto
+anténu pro jiné verze Bluetooth, které umožňují vysílat až 100mW.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width = 1\textwidth]{SAR.png}
 	\captionof{figure}{SAR na kůži fantomu}
 \end{figure}
 
-Doufám, že protokol ze cvičení stačí v takto strohé podobě.
-Pokud ne, tak mi prosím dejte vědět a případně můžu protokol přepracovat..
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[]{variables.png}
+	\captionof{figure}{Parametry simulace}
+\end{figure}
+
 \end{document}
 
 %\[f(x)= (x+2)^2 - \frac{9\cdot 2\pi}{26}\] %%mathematic equatation in display style mode

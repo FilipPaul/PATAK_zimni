@@ -1,0 +1,263 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002022, month=000000000011, day=000000000019, hour=000000000017, min=000000000047, sec=000000000012)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000007468, lin=000000000242, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock13'
+	SolutionName='AdaptivePass'
+	SolutionID=3424
+	V=5372
+	$begin 'States'
+		F(VID=5253, Ver=5372)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(2450000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=1
+			M(VID=5253, Ver=5372, File='DV5253_SOL3424_M1_V5372.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			M(VID=5253, Ver=5372, File='DV5253_SOL3424_M2_V5372.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			M(VID=5253, Ver=5372, File='DV5253_SOL3424_M3_V5372.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=4
+			M(VID=5253, Ver=5372, File='DV5253_SOL3424_M4_V5372.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=5
+			M(VID=5253, Ver=5372, File='DV5253_SOL3424_M5_V5372.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=6
+			M(VID=5253, Ver=5372, File='DV5253_SOL3424_M6_V5372.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=7
+			M(VID=5253, Ver=5372, File='DV5253_SOL3424_M7_V5372.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=8
+			M(VID=5253, Ver=5372, File='DV5253_SOL3424_M8_V5372.sd')
+		$end 'SubData'
+	$end 'M'
+$end 'SolutionBlock13'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=3423, Instance=\'SetupDefinition\', Solution=-1, VersionID=5279)'='SolutionBlock9'
+	'SolutionKey(SimSetup=3423, Instance=\'SolutionDefinition\', Solution=3424, VersionID=5372)'='SolutionBlock13'
+	'SolutionKey(SimSetup=3423, Instance=\'SolutionDefinition\', Solution=3425, VersionID=5372)'='SolutionBlock14'
+	'SolutionKey(SimSetup=3423, Instance=\'SolutionDefinition\', Solution=3429, VersionID=5372)'='SolutionBlock15'
+$end 'BlockMapName'
+$begin 'SolutionBlock14'
+	SolutionName='LastAdaptive'
+	SolutionID=3425
+	V=5372
+	$begin 'States'
+		F(VID=5253, Ver=5372)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(2450000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=5253, Ver=5372, File='DV5253_SOL3425_M0_V5372.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(5414, 2450000000)
+		$begin 'DataMap'
+			VID=5253
+			Ver=5372
+			F(DblID=5414, Dir='DV5253_S3425_V5372_F5414/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock14'
+$begin 'SolutionBlock15'
+	SolutionName='Sweep'
+	SolutionID=3429
+	V=5372
+	$begin 'States'
+		F(VID=5253, Ver=5372)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(1400000000, 1500000000, 1600000000, 1700000000, 1800000000, 1900000000, 2000000000, 2100000000, 2200000000, 2300000000, 2400000000, 2500000000, 2600000000, 2700000000, 2800000000, 2900000000, 3000000000, 3100000000, 3200000000, 3300000000, 3400000000, 3500000000, 3600000000, 3700000000, 3800000000, 3900000000, 4000000000, 4100000000, 4200000000, 4300000000, 4400000000, 4500000000, 4600000000, 4700000000, 4800000000, 4900000000, 5000000000, 5100000000, 5200000000, 5300000000, 5400000000, 5500000000, 5600000000, 5700000000, 5800000000, 5900000000, 6000000000)
+		SolutionType=5
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=0
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=5253, Ver=5372, File='DV5253_SOL3429_M0_V5372.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'SolverUsage'
+		IDDblMap(5443, 6000000000, 5444, 1400000000, 5445, 3700000000, 5446, 2550000000, 5447, 4850000000)
+		$begin 'DataMap'
+			VID=5253
+			Ver=5372
+			SU(DblID=5444, SU='DV5253_S3429_V5372_F5444_SU.txt')
+			SU(DblID=5446, SU='DV5253_S3429_V5372_F5446_SU.txt')
+			SU(DblID=5445, SU='DV5253_S3429_V5372_F5445_SU.txt')
+			SU(DblID=5447, SU='DV5253_S3429_V5372_F5447_SU.txt')
+			SU(DblID=5443, SU='DV5253_S3429_V5372_F5443_SU.txt')
+		$end 'DataMap'
+	$end 'SolverUsage'
+$end 'SolutionBlock15'
+$begin 'SolutionBlock9'
+	SimSetupID=3423
+	SimSetupName='Setup1'
+	VersionID=5279
+	$begin 'EmConvergenceData'
+		EmConv(VID=5253, Ver=5279, EmConv='DV5253_S3423_V5279.EMConvData')
+	$end 'EmConvergenceData'
+	IsImported=false
+	IsTable=false
+	SolveSetupID=1
+	$begin 'CurrMeshes'
+		M(VID=5253, Ver=5279, Dir='DV5253_S3423_V5279.cmesh/')
+	$end 'CurrMeshes'
+	MeshAssemVersionID=22
+	$begin 'NextAssemVersionID'
+		NextUniqueID=23
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+		$begin 'SubData'
+			ID=8
+			ADP(VID=5253, Ver=5279, Dir='DV5253_S3423_ADP8_V5279.sd/')
+		$end 'SubData'
+	$end 'ADP'
+	$begin 'SU'
+		$begin 'SubData'
+			ID=1
+			SU(VID=5253, Ver=5279, File='DV5253_S3423_SD1_V5279.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			SU(VID=5253, Ver=5279, File='DV5253_S3423_SD2_V5279.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			SU(VID=5253, Ver=5279, File='DV5253_S3423_SD3_V5279.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=4
+			SU(VID=5253, Ver=5279, File='DV5253_S3423_SD4_V5279.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=5
+			SU(VID=5253, Ver=5279, File='DV5253_S3423_SD5_V5279.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=6
+			SU(VID=5253, Ver=5279, File='DV5253_S3423_SD6_V5279.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=7
+			SU(VID=5253, Ver=5279, File='DV5253_S3423_SD7_V5279.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=8
+			SU(VID=5253, Ver=5279, File='DV5253_S3423_SD8_V5279.su')
+		$end 'SubData'
+	$end 'SU'
+	$begin 'WaveAdapt'
+		WA(VID=5253, Ver=5279, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=5253, Ver=5279, P=8)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=5253, Ver=5279, File='DV5253_S3423_V5279.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=5253, Ver=5279, Dir='DV5253_S3423_MI0_V5279.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock9'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='TASK2'
+	VersionID=5279
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=5449
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='air_t=\'40mm\' ant_l=\'17mm\' ant_w=\'24mm\' fat_t=\'10mm\' feed_s=\'0.20000000000000001mm\' feed_w=\'1.3999999999999999mm\' muscle_t=\'28mm\' phantom_x=\'60mm\' phantom_y=\'40mm\' skin_t=\'2mm\' sub_t=\'60mil\'', ID=5253)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=5253, Ver=5279, Dir='DV5253_V5279.imesh/')
+	$end 'InitialMeshes'
+	MeshAssemVersionID=22
+	$begin 'NextAssemVersionID'
+		NextUniqueID=23
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'DefinitionMeshes'
+		$begin 'DefMeshes_Comp-1'
+			DefinitionID=-1
+			VersionID=21
+			VIDMap('air_t=\'40mm\' ant_l=\'17mm\' ant_w=\'24mm\' fat_t=\'10mm\' feed_s=\'0.20000000000000001mm\' feed_w=\'1.3999999999999999mm\' muscle_t=\'28mm\' phantom_x=\'60mm\' phantom_y=\'40mm\' skin_t=\'2mm\' sub_t=\'60mil\'', 5409)
+			DM(VID=5409, Ver=21, Dir='NDV5409_V21.dmesh/')
+		$end 'DefMeshes_Comp-1'
+	$end 'DefinitionMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=5253, Ver=5279, Dir='DV5253_MI0_V5279.sd/')
+		$end 'SubData'
+	$end 'MI'
+	VersionID2=5280
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock1(pos=6194, lin=205, lvl=0)
+		SolutionBlock13(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=1610, lin=54, lvl=0)
+		SolutionBlock14(pos=2123, lin=61, lvl=0)
+		SolutionBlock15(pos=2806, lin=94, lvl=0)
+		SolutionBlock9(pos=4345, lin=131, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=7468, lin=242, lvl=0)
+	$end '$index$'
+$end '$index$'

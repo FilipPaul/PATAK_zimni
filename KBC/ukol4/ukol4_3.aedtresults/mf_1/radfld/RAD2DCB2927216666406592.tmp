@@ -5,8 +5,8 @@ $begin 'RFSM'
 	$end 'CustomSurfs'
 	$begin 'SetupSolns'
 		$begin 'SetupSolnEntry'
-			Key(ParentID=9, VersID=24, ParentID=96, VersID=3295, Context='0:0', DesVarn='ant_d=\'150mm\' ant_l=\'29mm\' fat_t=\'10mm\' muscle_t=\'28mm\' phantom_w=\'100mm\' skin_t=\'2mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
-			SetupSolnFBOFile='68FE2645216666854376.tmp'
+			Key(ParentID=9, VersID=24, ParentID=3489, VersID=3734, Context='0:0', DesVarn='ant_d=\'150mm\' ant_l=\'29mm\' fat_t=\'10mm\' muscle_t=\'28mm\' phantom_w=\'100mm\' skin_t=\'2mm\'', IntrVarn='Freq=\'2.4500000000000002GHz\'')
+			SetupSolnFBOFile='1B1D1077216688768575.tmp'
 		$end 'SetupSolnEntry'
 	$end 'SetupSolns'
 	$begin 'MonostaticRcsSolns'

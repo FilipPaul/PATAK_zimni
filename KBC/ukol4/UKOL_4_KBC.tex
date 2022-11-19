@@ -96,26 +96,37 @@
 		\includegraphics[width = 1\textwidth,height = 0.4\textheight]{S11.png}
 		\captionof{figure}{S11 parametr}
 	\end{figure}
+Pro zvolenou délku monopólu ant\_l = 19mm. Lze z z grafu pro S11 parametry určit rezonanční kmitočet
+přibližně 2.45 GHz. 
 \clearpage
-	\begin{figure}[ht!]
-		\centering
-		\begin{minipage}{.5\textwidth}
-		  \centering
-		  \includegraphics[height = 0.3\textheight]{log_scale.png}
-		  \captionof{figure}{Vyzařování ve vzdáleném poli - zisk v dB}
-		\end{minipage}%
-		\begin{minipage}{.5\textwidth}
-		  \centering
-		  \includegraphics[height = 0.3\textheight]{normal_scale.png}
-		  \captionof{figure}{Vyzařování ve vzdáleném poli - zisk}
-		\end{minipage}
-		\end{figure}
-
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width = 1\textwidth]{Z0.png}
 	\captionof{figure}{Charakteristická impedance koaxiálního kabelu}
 \end{figure}
+Cílem bylo navrhnout připojení pomocí koaxiálního kabelu s charakteristickou impedancí Z0 = 50 Ohm.
+Chyba v celém rozsahu kmitočtů nepřesahuje 1$\Omega$.
+
+\begin{figure}[ht!]
+	\centering
+	\begin{minipage}{.45\textwidth}
+		\centering
+		\includegraphics[height = 0.3\textheight]{log_scale.png}
+		\captionof{figure}{Vyzařování ve vzdáleném poli v případě pouze jedné antény - zisk je v lineárních jednotkách}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{.45\textwidth}
+		\centering
+		\includegraphics[height = 0.3\textheight]{normal_scale.png}
+		\captionof{figure}{Vyzařování ve vzdáleném poli v případě obou antén - zisk je v lineárních jednotkách}
+	\end{minipage}
+	\end{figure}
+
+Vzhledem k nízkému zisku monopólu jsou vyzařovací charakteristiky v lineárních jednotkách, aby byl
+na první pohled patrnější vliv reflektoru a ztrát ve fantomu. V případě simulace s oběma anténami došlo k deformaci
+vyzařovací charakteristiky. 
+
+
 \clearpage
 
 \section{\Large "Full"  a "Symetry" model dvojice monopólů poblíž lidských zad}
@@ -134,13 +145,20 @@
 	\end{minipage}
 	\end{figure}
 
-
+Předpokladem je, že by "Symetry" model měl mít výrazně nižší výpočetní náročnost oproti "Full" modelu.
+Následující tabulky zobrazují celkový čas simulace v případě použití "FULL" a "Symetry" modelů. Úspora
+času simulace v případě "Symetry" modelu je přibližně 60\%. Nicméně ANSYS defaultně omezuje
+maximální prostředky hardwaru použitého k simulaci. V případě použití defaultního nastavení
+trvala simulace "FULL" modelu přibližně 12 min. Po povolení používat pro simulaci vyšší míru hardwarových
+prostředků bylo dosaženo celkovému času simulace "FULL" modelu 01:46. Před každou simulací byla vymazána
+všechny odsimulovaná data, aby byl solver donucen k novému výpočtu všech simulačních dat.
 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width = 1\textwidth]{elapsed_time_full.png}
 	\captionof{figure}{celkový čas analýzy za použití "full" modelu}
 \end{figure}
+\clearpage
 
 \begin{figure}[ht!]
 	\centering
@@ -148,13 +166,16 @@
 	\captionof{figure}{celkový čas analýzy za použití "Symetry" modelu}
 \end{figure}
 
-\clearpage
+V obrázcích (11 a 12),je patrné, že se výsledné hodnoty simulace pro "Symetry" a "Full" modely liší.
+"Full" model by měl být přesnější a tak je vhodné na konci návrhu ověřit výsledky simulace za použití
+právě "Full" modelu za cenu vyšší časové náročnosti simulace.
 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[height = 0.26\textheight,width = 1\textwidth]{S11_compare.png}
-	\captionof{figure}{Porovnání S11 parametru při použití "full" (červeně) a "Symetry" (zeleně)  modelu}
+	\captionof{figure}{Porovnání S11 parametru při použití "full" (zeleně) a "Symetry" (červeně)  modelu}
 \end{figure}
+\clearpage
 
 \begin{figure}[ht!]
 	\centering
@@ -162,11 +183,22 @@
 	\captionof{figure}{Porovnání char. impedance Z0 při použití "full" (červeně) a "Symetry" (zeleně)  modelu}
 \end{figure}
 
+Obrázek níže znázorňuje rozložení elektrického pole při dané fázi buzení monopólu. V animaci (v prostředí ANSYS),
+lze pozorovat jak se mění elektrické pole jedné antény v závislosti na buzení antény druhé. Lze tak předpokládat,
+že je možno mezi anténami komunikovat. Zároveň jde vidět, že se elektrické pole šíří především ve volném prostředí
+charakterizovaným vakuem a pouze malá část radiace je přenášena lidskými tkáněmi.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[height = 0.3\textheight,width = 1\textwidth]{E_field_symetry.png}
 	\captionof{figure}{E-field v "symetry" modelu}
 \end{figure}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[height = 0.1\textheight]{variables.png}
+	\captionof{figure}{Parametry simulace}
+\end{figure}
+
 
 \end{document}
 

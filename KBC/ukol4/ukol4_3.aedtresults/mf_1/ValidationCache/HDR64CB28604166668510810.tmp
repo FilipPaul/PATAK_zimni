@@ -1,7 +1,2 @@
 $begin 'ValidationCache'
-	$begin 'OneValidationResult'
-		Variation='ant_d=\'150mm\' ant_l=\'29mm\' fat_t=\'10mm\' muscle_t=\'28mm\' phantom_w=\'100mm\' skin_t=\'2mm\''
-		Status=true
-		FileName='VI64CB28604166668510811.tmp'
-	$end 'OneValidationResult'
 $end 'ValidationCache'

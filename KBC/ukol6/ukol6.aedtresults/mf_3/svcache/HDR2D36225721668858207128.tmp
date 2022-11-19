@@ -1,0 +1,79 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=4
+	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='S(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=1
+		$begin 'SimValueParams'
+			QuantityName='Zo(1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=2
+		$begin 'SimValueParams'
+			QuantityName='Z(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=3
+		$begin 'SimValueParams'
+			QuantityName='GainTotal'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=3
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=60
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=61
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=3
+						SimValueContext(0, 0, 2, 0, false, false, 6, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=474
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' fat_t=\'10mm\' feed_w=\'3.9100000000000001mm\' Freq=\'2.4500000000000002GHz\' muscle_t=\'28mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'40.000999999999998mm\' patch_w=\'48.399999999999999mm\' phantom_w=\'200mm\' skin_t=\'2mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min19AD225721668866710318.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=65
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=0
+						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=474
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' fat_t=\'10mm\' feed_w=\'3.9100000000000001mm\' muscle_t=\'28mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'40.000999999999998mm\' patch_w=\'48.399999999999999mm\' phantom_w=\'200mm\' skin_t=\'2mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min19AD225721668866710319.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
+$end 'SimValueCache'

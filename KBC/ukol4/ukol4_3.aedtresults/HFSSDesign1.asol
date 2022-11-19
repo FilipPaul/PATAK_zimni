@@ -1,20 +1,184 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002022, month=000000000010, day=000000000025, hour=000000000010, min=000000000027, sec=000000000012)
+    time(year=000000002022, month=000000000011, day=000000000019, hour=000000000018, min=000000000011, sec=000000000027)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
-    $index$(pos=000000006147, lin=000000000208, lvl=000000000000)
+    $index$(pos=000000006082, lin=000000000202, lvl=000000000000)
   $end '$base_index$'
 $end '$base_index$'
+$begin 'SolutionBlock22'
+	SolutionName='LastAdaptive'
+	SolutionID=3489
+	V=3734
+	$begin 'States'
+		F(VID=3190, Ver=3734)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(2450000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=3190, Ver=3734, File='DV3190_SOL3489_M0_V3734.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(3667, 2450000000)
+		$begin 'DataMap'
+			VID=3190
+			Ver=3734
+			F(DblID=3667, Dir='DV3190_S3489_V3734_F3667/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock22'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=3487, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock20'
+	'SolutionKey(SimSetup=3487, Instance=\'SolutionDefinition\', Solution=3488, VersionID=3734)'='SolutionBlock21'
+	'SolutionKey(SimSetup=3487, Instance=\'SolutionDefinition\', Solution=3489, VersionID=3734)'='SolutionBlock22'
+	'SolutionKey(SimSetup=3487, Instance=\'SolutionDefinition\', Solution=3492, VersionID=3734)'='SolutionBlock23'
+$end 'BlockMapName'
+$begin 'SolutionBlock21'
+	SolutionName='AdaptivePass'
+	SolutionID=3488
+	V=3734
+	$begin 'States'
+		F(VID=3190, Ver=3734)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(2450000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=3
+			M(VID=3190, Ver=3734, File='DV3190_SOL3488_M3_V3734.sd')
+		$end 'SubData'
+	$end 'M'
+$end 'SolutionBlock21'
+$begin 'SolutionBlock20'
+	SimSetupID=3487
+	SimSetupName='Setup1'
+	VersionID=0
+	$begin 'EmConvergenceData'
+		EmConv(VID=3190, Ver=0, EmConv='DV3190_S3487_V0.EMConvData')
+	$end 'EmConvergenceData'
+	IsImported=false
+	IsTable=false
+	SolveSetupID=1
+	$begin 'CurrMeshes'
+		M(VID=3190, Ver=0, Dir='DV3190_S3487_V0.cmesh/')
+	$end 'CurrMeshes'
+	MeshAssemVersionID=0
+	$begin 'NextAssemVersionID'
+		NextUniqueID=1
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+		$begin 'SubData'
+			ID=3
+			ADP(VID=3190, Ver=0, Dir='DV3190_S3487_ADP3_V0.sd/')
+		$end 'SubData'
+	$end 'ADP'
+	$begin 'SU'
+		$begin 'SubData'
+			ID=1
+			SU(VID=3190, Ver=0, File='DV3190_S3487_SD1_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			SU(VID=3190, Ver=0, File='DV3190_S3487_SD2_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			SU(VID=3190, Ver=0, File='DV3190_S3487_SD3_V0.su')
+		$end 'SubData'
+	$end 'SU'
+	$begin 'WaveAdapt'
+		WA(VID=3190, Ver=0, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=3190, Ver=0, P=3)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=3190, Ver=0, File='DV3190_S3487_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=3190, Ver=0, Dir='DV3190_S3487_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock20'
+$begin 'SolutionBlock23'
+	SolutionName='Sweep'
+	SolutionID=3492
+	V=3734
+	$begin 'States'
+		F(VID=3190, Ver=3734)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(2000000000, 2050000000, 2100000000, 2150000000, 2200000000, 2250000000, 2300000000, 2350000000, 2400000000, 2450000000, 2500000000, 2550000000, 2600000000, 2650000000, 2700000000, 2750000000, 2800000000, 2850000000, 2900000000, 2950000000, 3000000000)
+		SolutionType=5
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=0
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=3190, Ver=3734, File='DV3190_SOL3492_M0_V3734.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'TransientSolveStauts'
+		SS(VID=3190, Ver=3734, SS=1)
+	$end 'TransientSolveStauts'
+	$begin 'SolverUsage'
+		IDDblMap(3678, 3000000000, 3679, 2000000000, 3680, 2500000000, 3681, 2250000000, 3682, 2750000000, 3684, 2875000000, 3685, 2625000000, 3686, 2375000000, 3687, 2125000000, 3688, 2812500000)
+		$begin 'DataMap'
+			VID=3190
+			Ver=3734
+			SU(DblID=3679, SU='DV3190_S3492_V3734_F3679_SU.txt')
+			SU(DblID=3687, SU='DV3190_S3492_V3734_F3687_SU.txt')
+			SU(DblID=3681, SU='DV3190_S3492_V3734_F3681_SU.txt')
+			SU(DblID=3686, SU='DV3190_S3492_V3734_F3686_SU.txt')
+			SU(DblID=3680, SU='DV3190_S3492_V3734_F3680_SU.txt')
+			SU(DblID=3685, SU='DV3190_S3492_V3734_F3685_SU.txt')
+			SU(DblID=3682, SU='DV3190_S3492_V3734_F3682_SU.txt')
+			SU(DblID=3688, SU='DV3190_S3492_V3734_F3688_SU.txt')
+			SU(DblID=3684, SU='DV3190_S3492_V3734_F3684_SU.txt')
+			SU(DblID=3678, SU='DV3190_S3492_V3734_F3678_SU.txt')
+		$end 'DataMap'
+	$end 'SolverUsage'
+$end 'SolutionBlock23'
 $begin 'SolutionBlock1'
 	ProductName=''
 	CircuitName='HFSSDesign1'
 	VersionID=3293
 	PostProcess=false
 	LossLess=true
-	NextUniqueID=3438
+	NextUniqueID=3792
 	MoveBackwards=false
 	$begin 'VariationIDs'
 		Map(V='ant_d=\'150mm\' ant_l=\'29mm\' fat_t=\'10mm\' muscle_t=\'28mm\' phantom_w=\'100mm\' skin_t=\'2mm\'', ID=3190)
@@ -45,185 +209,15 @@ $begin 'SolutionBlock1'
 	$end 'MI'
 	VersionID2=0
 $end 'SolutionBlock1'
-$begin 'BlockMapName'
-	FileHeader='SolutionBlock1'
-	'SolutionKey(SimSetup=94, Instance=\'SetupDefinition\', Solution=-1, VersionID=3293)'='SolutionBlock16'
-	'SolutionKey(SimSetup=94, Instance=\'SolutionDefinition\', Solution=100, VersionID=3295)'='SolutionBlock15'
-	'SolutionKey(SimSetup=94, Instance=\'SolutionDefinition\', Solution=95, VersionID=3295)'='SolutionBlock13'
-	'SolutionKey(SimSetup=94, Instance=\'SolutionDefinition\', Solution=96, VersionID=3295)'='SolutionBlock14'
-$end 'BlockMapName'
-$begin 'SolutionBlock16'
-	SimSetupID=94
-	SimSetupName='Setup1'
-	VersionID=3293
-	$begin 'EmConvergenceData'
-		EmConv(VID=3190, Ver=3293, EmConv='DV3190_S94_V3293.EMConvData')
-	$end 'EmConvergenceData'
-	IsImported=false
-	IsTable=false
-	SolveSetupID=0
-	$begin 'CurrMeshes'
-		M(VID=3190, Ver=3293, Dir='DV3190_S94_V3293.cmesh/')
-	$end 'CurrMeshes'
-	MeshAssemVersionID=8
-	$begin 'NextAssemVersionID'
-		NextUniqueID=9
-		MoveBackwards=false
-	$end 'NextAssemVersionID'
-	$begin 'ADP'
-		$begin 'SubData'
-			ID=3
-			ADP(VID=3190, Ver=3293, Dir='DV3190_S94_ADP3_V3293.sd/')
-		$end 'SubData'
-	$end 'ADP'
-	$begin 'SU'
-		$begin 'SubData'
-			ID=1
-			SU(VID=3190, Ver=3293, File='DV3190_S94_SD1_V3293.su')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=2
-			SU(VID=3190, Ver=3293, File='DV3190_S94_SD2_V3293.su')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=3
-			SU(VID=3190, Ver=3293, File='DV3190_S94_SD3_V3293.su')
-		$end 'SubData'
-	$end 'SU'
-	$begin 'WaveAdapt'
-		WA(VID=3190, Ver=3293, A=1)
-	$end 'WaveAdapt'
-	$begin 'LastPassNumbers'
-		LP(VID=3190, Ver=3293, P=3)
-	$end 'LastPassNumbers'
-	$begin 'Profiles'
-		P(VID=3190, Ver=3293, File='DV3190_S94_V3293.profile')
-	$end 'Profiles'
-	$begin 'MI'
-		$begin 'SubData'
-			ID=0
-			MI(VID=3190, Ver=3293, Dir='DV3190_S94_MI0_V3293.sd/')
-		$end 'SubData'
-	$end 'MI'
-$end 'SolutionBlock16'
-$begin 'SolutionBlock14'
-	SolutionName='LastAdaptive'
-	SolutionID=96
-	V=3295
-	$begin 'States'
-		F(VID=3190, Ver=3295)
-	$end 'States'
-	$begin 'Definition'
-		SamplingInterpolation=false
-		Frequencies(2450000000)
-		SolutionType=6
-		CenterFreq=0
-	$end 'Definition'
-	IsImported=false
-	IsTable=false
-	IsMatrixDataTable=false
-	SweepID=-1
-	KeepAllFastSweepFields=false
-	$begin 'M'
-		$begin 'SubData'
-			ID=0
-			M(VID=3190, Ver=3295, File='DV3190_SOL96_M0_V3295.sd')
-		$end 'SubData'
-	$end 'M'
-	$begin 'Fields'
-		IDDblMap(3405, 2450000000)
-		$begin 'DataMap'
-			VID=3190
-			Ver=3295
-			F(DblID=3405, Dir='DV3190_S96_V3295_F3405/')
-		$end 'DataMap'
-	$end 'Fields'
-$end 'SolutionBlock14'
-$begin 'SolutionBlock13'
-	SolutionName='AdaptivePass'
-	SolutionID=95
-	V=3295
-	$begin 'States'
-		F(VID=3190, Ver=3295)
-	$end 'States'
-	$begin 'Definition'
-		SamplingInterpolation=false
-		Frequencies(2450000000)
-		SolutionType=6
-		CenterFreq=0
-	$end 'Definition'
-	IsImported=false
-	IsTable=false
-	IsMatrixDataTable=false
-	SweepID=-1
-	KeepAllFastSweepFields=false
-	$begin 'M'
-		$begin 'SubData'
-			ID=1
-			M(VID=3190, Ver=3295, File='DV3190_SOL95_M1_V3295.sd')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=2
-			M(VID=3190, Ver=3295, File='DV3190_SOL95_M2_V3295.sd')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=3
-			M(VID=3190, Ver=3295, File='DV3190_SOL95_M3_V3295.sd')
-		$end 'SubData'
-	$end 'M'
-$end 'SolutionBlock13'
-$begin 'SolutionBlock15'
-	SolutionName='Sweep'
-	SolutionID=100
-	V=3295
-	$begin 'States'
-		F(VID=3190, Ver=3295)
-	$end 'States'
-	$begin 'Definition'
-		SamplingInterpolation=false
-		Frequencies(2000000000, 2050000000, 2100000000, 2150000000, 2200000000, 2250000000, 2300000000, 2350000000, 2400000000, 2450000000, 2500000000, 2550000000, 2600000000, 2650000000, 2700000000, 2750000000, 2800000000, 2850000000, 2900000000, 2950000000, 3000000000)
-		SolutionType=5
-		CenterFreq=0
-	$end 'Definition'
-	IsImported=false
-	IsTable=false
-	IsMatrixDataTable=false
-	SweepID=0
-	KeepAllFastSweepFields=false
-	$begin 'M'
-		$begin 'SubData'
-			ID=0
-			M(VID=3190, Ver=3295, File='DV3190_SOL100_M0_V3295.sd')
-		$end 'SubData'
-	$end 'M'
-	$begin 'TransientSolveStauts'
-		SS(VID=3190, Ver=3295, SS=1)
-	$end 'TransientSolveStauts'
-	$begin 'SolverUsage'
-		IDDblMap(3418, 3000000000, 3419, 2000000000, 3420, 2500000000, 3421, 2250000000, 3423, 2750000000, 3424, 2375000000, 3425, 2125000000, 3426, 2625000000)
-		$begin 'DataMap'
-			VID=3190
-			Ver=3295
-			SU(DblID=3419, SU='DV3190_S100_V3295_F3419_SU.txt')
-			SU(DblID=3425, SU='DV3190_S100_V3295_F3425_SU.txt')
-			SU(DblID=3421, SU='DV3190_S100_V3295_F3421_SU.txt')
-			SU(DblID=3424, SU='DV3190_S100_V3295_F3424_SU.txt')
-			SU(DblID=3420, SU='DV3190_S100_V3295_F3420_SU.txt')
-			SU(DblID=3426, SU='DV3190_S100_V3295_F3426_SU.txt')
-			SU(DblID=3423, SU='DV3190_S100_V3295_F3423_SU.txt')
-			SU(DblID=3418, SU='DV3190_S100_V3295_F3418_SU.txt')
-		$end 'DataMap'
-	$end 'SolverUsage'
-$end 'SolutionBlock15'
 $begin '$index$'
 	$begin '$index$'
-		BlockMapName(pos=1416, lin=38, lvl=0)
-		SolutionBlock13(pos=3905, lin=132, lvl=0)
-		SolutionBlock14(pos=3228, lin=99, lvl=0)
-		SolutionBlock15(pos=4617, lin=165, lvl=0)
-		SolutionBlock16(pos=1917, lin=45, lvl=0)
-		SolutionBlock1(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=1053, lin=34, lvl=0)
+		SolutionBlock21(pos=1564, lin=41, lvl=0)
+		SolutionBlock22(pos=370, lin=1, lvl=0)
+		SolutionBlock23(pos=3348, lin=120, lvl=0)
+		SolutionBlock20(pos=2076, lin=66, lvl=0)
+		SolutionBlock1(pos=5036, lin=165, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)
-		$index$(pos=6147, lin=208, lvl=0)
+		$index$(pos=6082, lin=202, lvl=0)
 	$end '$index$'
 $end '$index$'

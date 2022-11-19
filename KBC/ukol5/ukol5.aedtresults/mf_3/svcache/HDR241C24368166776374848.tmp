@@ -1,6 +1,6 @@
 SimValueCacheVersionID=1
 $begin 'SimValueInfos'
-	NextUniqueID=5
+	NextUniqueID=6
 	MoveBackwards=false
 	$begin 'SimValue'
 		ID=0
@@ -42,6 +42,14 @@ $begin 'SimValueInfos'
 			MatrixSize(0, 0)
 		$end 'SimValueParams'
 	$end 'SimValue'
+	$begin 'SimValue'
+		ID=5
+		$begin 'SimValueParams'
+			QuantityName='Gamma(1:1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
 $end 'SimValueInfos'
 $begin 'SimValueCache'
 	$begin 'DesignMap'
@@ -52,6 +60,19 @@ $begin 'SimValueCache'
 			$end 'ContextMap'
 			$begin 'ContextMap'
 				SolutionID=3425
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=3
+						SimValueContext(0, 0, 2, 0, false, false, 25, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=5199
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'40mm\' ant_l=\'17mm\' ant_w=\'24mm\' fat_t=\'10mm\' feed_s=\'0.20000000000000001mm\' feed_w=\'1.3999999999999999mm\' Freq=\'2.4500000000000002GHz\' muscle_t=\'28mm\' phantom_x=\'60mm\' phantom_y=\'40mm\' skin_t=\'2mm\' sub_t=\'60mil\''
+							MinorCacheFile='min30039124166886846171.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
 			$end 'ContextMap'
 			$begin 'ContextMap'
 				SolutionID=3429
@@ -61,10 +82,10 @@ $begin 'SimValueCache'
 						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 					$end 'ReportTypeSolnDef'
 					$begin 'MajorVVMap'
-						VersionID=4446
+						VersionID=5199
 						$begin 'MinorVVMap'
-							MajorVariation='ant_l=\'19mm\' ant_w=\'24mm\' fat_t=\'10mm\' feed_s=\'0.20000000000000001mm\' feed_w=\'0.90000000000000002mm\' muscle_t=\'28mm\' phantom_x=\'60mm\' phantom_y=\'40mm\' skin_t=\'2mm\' sub_t=\'60mil\''
-							MinorCacheFile='min5F7F243681667778438277.tmp'
+							MajorVariation='air_t=\'40mm\' ant_l=\'17mm\' ant_w=\'24mm\' fat_t=\'10mm\' feed_s=\'0.20000000000000001mm\' feed_w=\'1.3999999999999999mm\' muscle_t=\'28mm\' phantom_x=\'60mm\' phantom_y=\'40mm\' skin_t=\'2mm\' sub_t=\'60mil\''
+							MinorCacheFile='min30039124166886846172.tmp'
 						$end 'MinorVVMap'
 					$end 'MajorVVMap'
 				$end 'VersionMap'

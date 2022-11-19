@@ -1,0 +1,107 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=4
+	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='S(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=1
+		$begin 'SimValueParams'
+			QuantityName='Zo(1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=2
+		$begin 'SimValueParams'
+			QuantityName='Z(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=3
+		$begin 'SimValueParams'
+			QuantityName='GainTotal'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=0
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=60
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=61
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=3
+						SimValueContext(0, 0, 2, 0, false, false, 4, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=226
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' feed_w=\'3.9100000000000001mm\' Freq=\'2.4500000000000002GHz\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'39.299999999999997mm\' patch_w=\'48.399999999999999mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min2D36225721668858207126.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=65
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=0
+						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=226
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' feed_w=\'3.9100000000000001mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'40.68mm\' patch_w=\'48.399999999999999mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min1BFE22572166885685731.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' feed_w=\'3.9100000000000001mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'40.200000000000003mm\' patch_w=\'48.399999999999999mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min1CBB22572166885691544.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' feed_w=\'3.9100000000000001mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'40.100000000000001mm\' patch_w=\'48.399999999999999mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min1D4E22572166885696057.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' feed_w=\'3.9100000000000001mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'39.299999999999997mm\' patch_w=\'48.399999999999999mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min1DD422572166885700171.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' feed_w=\'3.9100000000000001mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'40mm\' patch_w=\'48.399999999999999mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min1E7E22572166885705384.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' feed_w=\'3.9100000000000001mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'40.049999999999997mm\' patch_w=\'48.399999999999999mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min1F0722572166885709597.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' feed_w=\'3.9100000000000001mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'40.005000000000003mm\' patch_w=\'48.399999999999999mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min1F80225721668857132110.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' feed_w=\'3.9100000000000001mm\' notch_l=\'15mm\' notch_w=\'1mm\' patch_l=\'40.000999999999998mm\' patch_w=\'48.399999999999999mm\' sub_t=\'50mil\' sub_w=\'100mm\''
+							MinorCacheFile='min2D36225721668858207127.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
+$end 'SimValueCache'

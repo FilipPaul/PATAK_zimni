@@ -168,8 +168,8 @@ $begin 'AnsoftProject'
 				$end 'Properties'
 				CompExtID=6
 				$begin 'Parameters'
-					MenuProp('CoSimulator', 'D', '', 'DefaultNetlist', 0)
 					ButtonProp('CosimDefinition', 'D', '', '', 'Edit', 40501, ButtonPropClientData())
+					MenuProp('CoSimulator', 'D', '', 'DefaultNetlist', 0)
 				$end 'Parameters'
 				$begin 'CosimDefinitions'
 					$begin 'CosimDefinition'
@@ -245,8 +245,8 @@ $begin 'AnsoftProject'
 				$end 'DatasetDefinitions'
 			$end 'DesignDatasets'
 			$begin 'Properties'
-				VariableProp('dipole_l', 'UD', '', '54.15mm')
-				VariableProp('air_t', 'UD', '', 'dipole_l*2')
+				VariableProp('dipole_l', 'UD', '', '54.15mm', oa(i=true, int=false, Min='30.61mm', Max='91.83mm', MinStep='0.6122mm', MaxStep='6.122mm', MinFocus='30.61mm', MaxFocus='91.83mm', UseManufacturableValues='false', Level='[30.61: 91.83] mm'))
+				VariableProp('air_t', 'UD', '', '2*dipole_l')
 			$end 'Properties'
 			VariableOrders[2: 'dipole_l', 'air_t']
 			$begin 'Editor3D Doc Preferences'
@@ -266,7 +266,7 @@ $begin 'AnsoftProject'
 			WorkingCS=1
 			$begin 'GeometryCore'
 				BlockVersionID=3
-				DataVersion=13
+				DataVersion=27
 				NativeKernel='ACIS'
 				NativeKernelVersionID=13
 				Units='mm'
@@ -1032,8 +1032,95 @@ $begin 'AnsoftProject'
 		$end 'AnalysisSetup'
 		$begin 'Optimetrics'
 			$begin 'OptimetricsSetups'
-				NextUniqueID=0
+				NextUniqueID=1
 				MoveBackwards=false
+				$begin 'OptimizationSetup1'
+					ID=0
+					SetupType='OptiOptimization'
+					IsEnabled=true
+					NextUniqueID=2
+					MoveBackwards=false
+					GoalSetupVersion=0
+					Version=1
+					$begin 'ProdOptiSetupDataV2'
+						SaveFields=false
+						CopyMesh=false
+						SolveWithCopiedMeshOnly=true
+					$end 'ProdOptiSetupDataV2'
+					$begin 'StartingPoint'
+					$end 'StartingPoint'
+					Optimizer='kDX ASO'
+					$begin 'AnalysisStopOptions'
+						StopForNumIteration=true
+						StopForElapsTime=false
+						StopForSlowImprovement=false
+						StopForGrdTolerance=false
+						MaxNumIteration=20
+						MaxSolTimeInSec=3600
+						RelGradientTolerance=0
+						MinNumIteration=10
+					$end 'AnalysisStopOptions'
+					CostFuncNormType='L2'
+					PriorPSetup=-1
+					PreSolvePSetup=true
+					$begin 'Variables'
+					$end 'Variables'
+					$begin 'LCS'
+					$end 'LCS'
+					$begin 'Goals'
+						$begin 'Goal'
+							$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+								DesignID=0
+								SolutionID=45
+								$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+									ReportType=0
+									SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+								$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+							$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+							Calculation='dB(S(1,1))'
+							Name='dB(S(1,1))'
+							$begin 'Ranges'
+								Range(Var='Freq', Type='d', DiscreteValues='2.44GHz')
+							$end 'Ranges'
+							Condition='Minimize'
+							$begin 'GoalValue'
+								GoalValueType='Independent'
+								Format='Real/Imag'
+								bG(v='[-20;]')
+							$end 'GoalValue'
+							Weight='[1;]'
+						$end 'Goal'
+					$end 'Goals'
+					Acceptable_Cost=0
+					Noise=0.0001
+					UpdateDesign=false
+					UpdateIteration=5
+					KeepReportAxis=true
+					UpdateDesignWhenDone=true
+					$begin 'DXOptimizerOptionData'
+						Version=0
+						VerifyCandidatePoints=true
+						InitSamples=5
+						MaxCandidates=3
+						SamplesPerIteration=1
+						MaxAllowParetoPercentage=70
+						FiniteDifferenceApproximation='Forward'
+						TypeOfDiscreteCrossover='OnePoint'
+						SamplingType='Screening'
+						MutationProbability=0.01
+						CrossoverProbability=0.98
+						InitalDiffDelta=0.001
+						MaxEvaluations=20
+						ConvergenceTolerance=0.001
+						RandomSeed=0
+						MaxCydes=10
+						ScreenSamples=100
+						StartingPoints=3
+						MaxDomainReductions=20
+						PercentDomainReductions=0.1
+						RetainedDomainPerIteration=40
+					$end 'DXOptimizerOptionData'
+				$end 'OptimizationSetup1'
 			$end 'OptimetricsSetups'
 		$end 'Optimetrics'
 		$begin 'Solutions'
@@ -1060,6 +1147,8 @@ $begin 'AnsoftProject'
 			$begin 'PlotDefaults'
 				Default_SolutionId=41
 				Default_PlotFolder='Automatic'
+				Default_Phase='0deg'
+				Default_Freq='2.45GHz'
 			$end 'PlotDefaults'
 			$begin 'FieldsPlotManagerID'
 				NextUniqueID=3
@@ -1233,12 +1322,12 @@ $begin 'AnsoftProject'
 							$end 'PostprocessSweep'
 							$begin 'Sweep'
 								Variable='dipole_l'
-								Column='54.15mm'
+								Column='30.2mm;30.6mm;36.732mm;43.9511733361355mm;48.976mm;50.0731733422014mm;50.07546100369mm;51.5120366503518mm;52.7677057172821mm;53.5705219949583mm;53.904055256014mm;54.15mm;54.4073384174149mm;54.5243223512213mm;54.7823635544184mm;54.8931972819348mm;55.0252698877821mm;55.06173502936mm;55.0749226618566mm;55.6727998020112mm;56.0043533123641mm;57.3222248198101mm;60.4mm;61.22mm;66.6821113682766mm;66.7066991170055mm;73.464mm;85.708mm'
 								Units='mm'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='air_t'
-								Column='108.3mm'
+								Column='35mm;40.9mm;60.4mm;61.2mm;73.464mm;87.902346672271mm;97.952mm;100.146346684403mm;100.15092200738mm;103.024073300704mm;105.535411434564mm;107.141043989917mm;107.808110512028mm;108.3mm;108.81467683483mm;109.048644702443mm;109.564727108837mm;109.78639456387mm;110.050539775564mm;110.12347005872mm;110.149845323713mm;111.345599604022mm;112.008706624728mm;114.64444963962mm;120.8mm;122.44mm;133.364222736553mm;133.413398234011mm;146.928mm;162.45mm;171.416mm'
 								Units='mm'
 							$end 'Sweep'
 						$end 'Sweeps'
@@ -1249,7 +1338,7 @@ $begin 'AnsoftProject'
 					ID=41
 					Name='LastAdaptive'
 					$begin 'SimDataExtractor'
-						SimValue('GainTotal', 1, 90, true, SimValueID=389, 0, 0, 2, 0, false, false, 1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('GainTotal', 1, 90, true, SimValueID=461, 0, 0, 2, 0, false, false, 1, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='Freq'
@@ -1294,12 +1383,12 @@ $begin 'AnsoftProject'
 							$end 'PostprocessSweep'
 							$begin 'Sweep'
 								Variable='dipole_l'
-								Column='54.15mm'
+								Column='30.2mm;30.6mm;36.732mm;43.9511733361355mm;48.976mm;50.0731733422014mm;50.07546100369mm;51.5120366503518mm;52.7677057172821mm;53.5705219949583mm;53.904055256014mm;54.15mm;54.4073384174149mm;54.5243223512213mm;54.7823635544184mm;54.8931972819348mm;55.0252698877821mm;55.06173502936mm;55.0749226618566mm;55.6727998020112mm;56.0043533123641mm;57.3222248198101mm;60.4mm;61.22mm;66.6821113682766mm;66.7066991170055mm;73.464mm;85.708mm'
 								Units='mm'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='air_t'
-								Column='108.3mm'
+								Column='35mm;40.9mm;60.4mm;61.2mm;73.464mm;87.902346672271mm;97.952mm;100.146346684403mm;100.15092200738mm;103.024073300704mm;105.535411434564mm;107.141043989917mm;107.808110512028mm;108.3mm;108.81467683483mm;109.048644702443mm;109.564727108837mm;109.78639456387mm;110.050539775564mm;110.12347005872mm;110.149845323713mm;111.345599604022mm;112.008706624728mm;114.64444963962mm;120.8mm;122.44mm;133.364222736553mm;133.413398234011mm;146.928mm;162.45mm;171.416mm'
 								Units='mm'
 							$end 'Sweep'
 						$end 'Sweeps'
@@ -1310,7 +1399,7 @@ $begin 'AnsoftProject'
 					ID=45
 					Name='Sweep'
 					$begin 'SimDataExtractor'
-						SimValue('S(1,1)', 2, 90, false, SimValueID=390, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('S(1,1)', 2, 90, false, SimValueID=462, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='Freq'
@@ -1359,12 +1448,12 @@ $begin 'AnsoftProject'
 							$end 'PostprocessSweep'
 							$begin 'Sweep'
 								Variable='dipole_l'
-								Column='54.15mm'
+								Column='30.2mm;30.6mm;36.732mm;43.9511733361355mm;48.976mm;50.0731733422014mm;50.07546100369mm;51.5120366503518mm;52.7677057172821mm;53.5705219949583mm;53.904055256014mm;54.15mm;54.5243223512213mm;54.7823635544184mm;54.8931972819348mm;55.0252698877821mm;55.06173502936mm;55.0749226618566mm;55.6727998020112mm;56.0043533123641mm;57.3222248198101mm;60.4mm;61.22mm;66.6821113682766mm;66.7066991170055mm;73.464mm;85.708mm'
 								Units='mm'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='air_t'
-								Column='108.3mm'
+								Column='35mm;40.9mm;60.4mm;61.2mm;73.464mm;87.902346672271mm;97.952mm;100.146346684403mm;100.15092200738mm;103.024073300704mm;105.535411434564mm;107.141043989917mm;107.808110512028mm;108.3mm;109.048644702443mm;109.564727108837mm;109.78639456387mm;110.050539775564mm;110.12347005872mm;110.149845323713mm;111.345599604022mm;112.008706624728mm;114.64444963962mm;120.8mm;122.44mm;133.364222736553mm;133.413398234011mm;146.928mm;162.45mm;171.416mm'
 								Units='mm'
 							$end 'Sweep'
 						$end 'Sweeps'
@@ -1432,7 +1521,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=1
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 0, 0, 1712, 1008), OrientationMatrix(0.213761642575264, 0.0674142763018608, -0.547489583492279, 0, -0.541995346546173, -0.0836573466658592, -0.221904322504997, 0, -0.102707892656326, 0.581768155097961, 0.0315412692725658, 0, 927.947021484375, 355.996856689453, -367.302856445312, 1, 0, 926.277587890625, 930.359130859375, 354.993530273438, 357.843505859375, -237.341125488281, 971.946838378906), Drawings[4: 'Cylinder1', 'Rectangle1', 'Air_box', ''], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=0.1, dYForGrid=0.1, dZForGrid=0.1, dRForGrid=0.1, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 52, 52, 1431, 549), OrientationMatrix(0.00460620690137148, -0.000970900699030608, 0.000919840880669653, 0, 0.00108650198671967, 0.000792794802691787, -0.00460403459146619, 0, 0.000779928988777101, 0.00462975958362222, 0.000981267774477601, 0, 2.72326326370239, 0.292895257472992, -1.11672186851501, 1, 0, 1.98224139213562, 4.27086734771729, 0.00160682201385498, 0.938519358634949, -3.78552842140198, 6.01897239685059), Drawings[4: 'Cylinder1', 'Rectangle1', 'Air_box', ''], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=10, dYForGrid=10, dZForGrid=10, dRForGrid=10, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -1454,7 +1543,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=0
-									VersionID=18
+									VersionID=58
 									Name='dB(S(1,1))'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -1526,7 +1615,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=6
-									VersionID=26
+									VersionID=59
 									Name='dB(GainTotal)'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -1606,7 +1695,7 @@ $begin 'AnsoftProject'
 						NextUniqueID=8
 						MoveBackwards=false
 						$begin 'NextVersID'
-							NextUniqueID=27
+							NextUniqueID=60
 							MoveBackwards=false
 						$end 'NextVersID'
 					$end 'ReportManager'
@@ -1631,7 +1720,7 @@ $begin 'AnsoftProject'
 									$end 'Graph2D'
 								$end 'Graph2DsV2'
 								$begin 'PlotDisplayDataManager'
-									NextUniqueID=48
+									NextUniqueID=62
 									MoveBackwards=false
 									$begin 'PlotHeaderDataSource'
 										CompanyName=''
@@ -1644,7 +1733,7 @@ $begin 'AnsoftProject'
 											$begin 'CartesianXMarkerDataSource'
 												CartesianXMarkerID=39
 												CursorName='MX1'
-												XValue=2446406782.56974
+												XValue=2462039083.57104
 											$end 'CartesianXMarkerDataSource'
 										$end 'ListItem'
 									$end 'SourceList'
@@ -2978,17 +3067,17 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=47
+											ItemID=61
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
 														DataSourceID=4
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=451
-																Left=589
-																Bottom=9606
-																Right=8798
+																Top=535
+																Left=693
+																Bottom=9533
+																Right=8558
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -2996,10 +3085,10 @@ $begin 'AnsoftProject'
 														DataSourceID=28
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=451
-																Left=589
-																Bottom=9606
-																Right=8798
+																Top=535
+																Left=693
+																Bottom=9533
+																Right=8558
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -3010,7 +3099,7 @@ $begin 'AnsoftProject'
 																Top=75
 																Left=75
 																Bottom=9925
-																Right=411
+																Right=483
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -3021,15 +3110,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=8798
+																Left=8558
 																Bottom=9925
-																Right=9563
+																Right=9485
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=451
-																Left=589
-																Bottom=9606
-																Right=8798
+																Top=535
+																Left=693
+																Bottom=9533
+																Right=8558
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=false
@@ -3040,15 +3129,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=589
-																Bottom=451
-																Right=8798
+																Left=693
+																Bottom=535
+																Right=8558
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=451
-																Left=589
-																Bottom=9606
-																Right=8798
+																Top=535
+																Left=693
+																Bottom=9533
+																Right=8558
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=false
@@ -3087,6 +3176,24 @@ $begin 'AnsoftProject'
 															LineMaxYXOutOfGrid=8798
 														$end 'CartesianXMarkerLayoutAttribute'
 													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=53
+														$begin 'CartesianXMarkerLayoutAttribute'
+															TextBoxMaxY=9582
+															TextBoxHeight=343
+															LineMaxYXInGrid=677
+															LineMaxYXOutOfGrid=8594
+														$end 'CartesianXMarkerLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=60
+														$begin 'CartesianXMarkerLayoutAttribute'
+															TextBoxMaxY=9573
+															TextBoxHeight=352
+															LineMaxYXInGrid=693
+															LineMaxYXOutOfGrid=8558
+														$end 'CartesianXMarkerLayoutAttribute'
+													$end 'SubMapItem'
 												$end 'MainMapItem'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -3096,9 +3203,9 @@ $begin 'AnsoftProject'
 																$begin 'OverlayLayoutAttribute'
 																	$begin 'BoundingRect'
 																		Top=4850
-																		Left=511
+																		Left=583
 																		Bottom=9850
-																		Right=8011
+																		Right=8083
 																	$end 'BoundingRect'
 																	ModifySize=false
 																	ModifyPosition=false
@@ -3291,7 +3398,7 @@ $begin 'AnsoftProject'
 								$begin 'Report2D'
 									$begin 'ViewInfo'
 										$begin 'WrapperView'
-											ID(47)
+											ID(61)
 										$end 'WrapperView'
 										$begin 'WrapperDoc'
 											HiddenDrawings()
@@ -3301,13 +3408,13 @@ $begin 'AnsoftProject'
 													$begin 'MedCamera'
 														$begin 'svrc'
 															svid=4
-															view(47, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1)))
+															view(61, cam(XYCam(false, true, true, true, 0.0621224343776703, 0.952121019363403, -0.0406521484255791, 0.849346458911896, 0, 1, 0, 1, 0, 1)))
 														$end 'svrc'
 													$end 'MedCamera'
 												$end 'CurveMed'
 											$end 'DispType'
 										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, -1, -1, -8, -31, 156, 156, 2165, 852))
+										WindowPos(WindowPos(3, -1, -1, -8, -31, 78, 78, 1438, 579))
 									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
@@ -3315,7 +3422,7 @@ $begin 'AnsoftProject'
 						$begin 'Gain Plot 1'
 							ReportID=7
 							$begin 'WindowInfoList'
-								R3DWindowPos(Report3D(View(WindowPos(3, -1, -1, -8, -31, 234, 234, 1938, 1395))))
+								R3DWindowPos(Report3D(View(WindowPos(5, -1, -1, -8, -31, 156, 156, 1594, 543))))
 							$end 'WindowInfoList'
 						$end 'Gain Plot 1'
 					$end 'ReportsWindowInfoList'
@@ -3430,8 +3537,8 @@ LO5B2sGnngZJI3tZFfZqtZ2kdjawWsTO6woFMspVp55CS01zcOqjzbmWVnklfALySM55JqzQAUUUUAf\
 		IsSolved=true
 		'Nominal Setups'[1: 'Setup1']
 		'Nominal Setup Types'[1: '']
-		'Optimetrics Setups'[0:]
-		'Optimetrics Experiment Types'[0:]
+		'Optimetrics Setups'[1: 'OptimizationSetup1']
+		'Optimetrics Experiment Types'[1: 1]
 		Image64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
 BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
 ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCADIAMgDASIAAhEBAxEB/\

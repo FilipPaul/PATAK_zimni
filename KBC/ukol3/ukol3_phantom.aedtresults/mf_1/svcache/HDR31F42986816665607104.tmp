@@ -1,6 +1,6 @@
 SimValueCacheVersionID=1
 $begin 'SimValueInfos'
-	NextUniqueID=2
+	NextUniqueID=3
 	MoveBackwards=false
 	$begin 'SimValue'
 		ID=0
@@ -18,26 +18,24 @@ $begin 'SimValueInfos'
 			MatrixSize(0, 0)
 		$end 'SimValueParams'
 	$end 'SimValue'
+	$begin 'SimValue'
+		ID=2
+		$begin 'SimValueParams'
+			QuantityName='Zo(1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
 $end 'SimValueInfos'
 $begin 'SimValueCache'
 	$begin 'DesignMap'
 		DesignID=1
 		$begin 'SolutionMap'
 			$begin 'ContextMap'
+				SolutionID=40
+			$end 'ContextMap'
+			$begin 'ContextMap'
 				SolutionID=41
-				$begin 'VersionMap'
-					$begin 'ReportTypeSolnDef'
-						ReportType=3
-						SimValueContext(0, 0, 2, 0, false, false, 1, 1, 0, 1, 1, '', 0, 0)
-					$end 'ReportTypeSolnDef'
-					$begin 'MajorVVMap'
-						VersionID=426
-						$begin 'MinorVVMap'
-							MajorVariation='air_t=\'108.3mm\' dipole_l=\'54.149999999999999mm\' Freq=\'2.4500000000000002GHz\''
-							MinorCacheFile='min544E27988166656340331.tmp'
-						$end 'MinorVVMap'
-					$end 'MajorVVMap'
-				$end 'VersionMap'
 			$end 'ContextMap'
 			$begin 'ContextMap'
 				SolutionID=45
@@ -47,10 +45,14 @@ $begin 'SimValueCache'
 						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 					$end 'ReportTypeSolnDef'
 					$begin 'MajorVVMap'
-						VersionID=426
+						VersionID=771
+						$begin 'MinorVVMap'
+							MajorVariation='air_t=\'70mm\' dipole_l=\'54.149999999999999mm\''
+							MinorCacheFile='min65E216080166873220332.tmp'
+						$end 'MinorVVMap'
 						$begin 'MinorVVMap'
 							MajorVariation='air_t=\'108.3mm\' dipole_l=\'54.149999999999999mm\''
-							MinorCacheFile='min544E27988166656340332.tmp'
+							MinorCacheFile='min741B16080166873331847.tmp'
 						$end 'MinorVVMap'
 					$end 'MajorVVMap'
 				$end 'VersionMap'
