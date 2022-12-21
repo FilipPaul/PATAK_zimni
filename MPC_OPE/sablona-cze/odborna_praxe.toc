@@ -1,0 +1,36 @@
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\contentsline {chapter}{Úvod}{3}{section*.3}%
+\contentsline {chapter}{\numberline {1}Popis zařízení:}{4}{chapter.4}%
+\contentsline {section}{\numberline {1.1}Stůl}{5}{section.7}%
+\contentsline {section}{\numberline {1.2}Rack}{5}{section.12}%
+\contentsline {section}{\numberline {1.3}Interface}{5}{section.13}%
+\contentsline {section}{\numberline {1.4}Adaptér}{5}{section.14}%
+\contentsline {subsection}{\numberline {1.4.1}Výměna adaptérů:}{6}{subsection.19}%
+\contentsline {chapter}{\numberline {2}Obsluha zařízení:}{7}{chapter.27}%
+\contentsline {section}{\numberline {2.1}Pracovní postup:}{7}{section.28}%
+\contentsline {chapter}{\numberline {3}Software}{8}{chapter.38}%
+\contentsline {section}{\numberline {3.1}Standardní uživatel}{8}{section.39}%
+\contentsline {subsection}{\numberline {3.1.1}Sekce volba testované desky}{8}{subsection.42}%
+\contentsline {subsection}{\numberline {3.1.2}Sekce Tester}{8}{subsection.43}%
+\contentsline {section}{\numberline {3.2}Software - Obsluha testeru}{9}{section.44}%
+\contentsline {subsection}{\numberline {3.2.1}Přihlášení obsluhy}{9}{subsection.45}%
+\contentsline {subsection}{\numberline {3.2.2}Skenování čísla zakázky:}{9}{subsection.46}%
+\contentsline {section}{\numberline {3.3}Skenování Sériového čísla:}{9}{section.47}%
+\contentsline {subsection}{\numberline {3.3.1}Vložení desky do správné pozice:}{10}{subsection.50}%
+\contentsline {subsection}{\numberline {3.3.2}Dokončení testu:}{11}{subsection.55}%
+\contentsline {section}{\numberline {3.4}Paralelní programování}{12}{section.59}%
+\contentsline {subsection}{\numberline {3.4.1}Skenování pozice A:}{12}{subsection.60}%
+\contentsline {subsection}{\numberline {3.4.2}Skenování pozice B:}{12}{subsection.63}%
+\contentsline {subsection}{\numberline {3.4.3}Průběh testu:}{13}{subsection.66}%
+\contentsline {subsection}{\numberline {3.4.4}Výsledky testů:}{13}{subsection.69}%
+\contentsline {section}{\numberline {3.5}Testování LED}{14}{section.74}%
+\contentsline {chapter}{\numberline {4}Software - Administrátorský mód}{15}{chapter.77}%
+\contentsline {subsection}{\numberline {4.0.1}Sekce Možnosti testu:}{15}{subsection.80}%
+\contentsline {subsection}{\numberline {4.0.2}Sekce ovládání hlavní desky:}{15}{subsection.81}%
+\contentsline {subsection}{\numberline {4.0.3}Sekce FLASHRUNNER:}{16}{subsection.82}%
+\contentsline {subsection}{\numberline {4.0.4}Sekce GWINSTEK PSU:}{16}{subsection.83}%
+\contentsline {section}{\numberline {4.1}Chyby}{16}{section.84}%
+\contentsline {chapter}{\numberline {5}Struktura složek:}{17}{chapter.87}%
+\contentsline {section}{\numberline {5.1}Přídavné utility}{18}{section.92}%
+\contentsline {chapter}{Závěr}{19}{section*.94}%

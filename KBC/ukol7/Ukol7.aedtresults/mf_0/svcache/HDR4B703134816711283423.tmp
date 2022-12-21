@@ -1,0 +1,111 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=7
+	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='S(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=1
+		$begin 'SimValueParams'
+			QuantityName='Zo(1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=2
+		$begin 'SimValueParams'
+			QuantityName='Z(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=3
+		$begin 'SimValueParams'
+			QuantityName='Y(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=4
+		$begin 'SimValueParams'
+			QuantityName='Gamma(1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=5
+		$begin 'SimValueParams'
+			QuantityName='Zo(1:1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=6
+		$begin 'SimValueParams'
+			QuantityName='GainTotal'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=0
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=1964
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=1965
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=3
+						SimValueContext(0, 0, 2, 0, false, false, 12, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=3822
+						$begin 'MinorVVMap'
+							MajorVariation='cpw_gap=\'0.14000000000000001mm\' cpw_w=\'2mm\' feed_w=\'2mm\' Freq=\'2.4500000000000002GHz\' L_length=\'0.0043292251909380457\' l_width=\'1mm\' lambda=\'0.086584503818760913\' substrate_width=\'1.8mm\' trace_depth=\'0mm\' trace_width=\'0.0010823062977345114\' tune_feed=\'0.0072153753182300764\' tune_length=\'2mm\''
+							MinorCacheFile='min3CEF30121671157308282.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=1969
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=0
+						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=3822
+						$begin 'MinorVVMap'
+							MajorVariation='cpw_gap=\'0.14000000000000001mm\' cpw_w=\'2mm\' feed_w=\'2mm\' L_length=\'0.0043292251909380457\' l_width=\'1mm\' lambda=\'0.086584503818760913\' substrate_width=\'1.8mm\' trace_depth=\'0mm\' trace_width=\'0.0010823062977345114\' tune_feed=\'0.0072153753182300764\' tune_length=\'2mm\''
+							MinorCacheFile='min3CEF30121671157308283.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='cpw_gap=\'0.20000000000000001mm\' cpw_w=\'3.5mm\' feed_w=\'2mm\' L_length=\'0.0043292251909380457\' l_width=\'1mm\' lambda=\'0.086584503818760913\' substrate_width=\'1.8mm\' trace_depth=\'0mm\' trace_width=\'0.0010823062977345114\' tune_feed=\'0.0072153753182300764\' tune_length=\'2mm\''
+							MinorCacheFile='min3DAF30121671157367292.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='cpw_gap=\'0.20000000000000001mm\' cpw_w=\'3.5mm\' feed_w=\'2mm\' L_length=\'0.0043292251909380457\' l_width=\'1mm\' lambda=\'0.086584503818760913\' substrate_width=\'1.8mm\' trace_depth=\'0mm\' trace_width=\'0.0010823062977345114\' tune_feed=\'0.0038482001697227072\' tune_length=\'2mm\''
+							MinorCacheFile='min3E7A30121671157429302.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
+$end 'SimValueCache'
